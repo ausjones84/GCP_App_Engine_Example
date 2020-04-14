@@ -1,0 +1,23 @@
+runtime: python27
+api_version: 1
+service: paid
+threadsafe: true
+
+handlers:
+- url: /paid
+  static_files: www/index.html
+  upload: www/index.html
+  secure: always
+  login: required
+
+- url: /paid/
+  static_files: www/index.html
+  upload: www/index.html
+  secure: always
+  login: required
+
+- url: /paid/(.*)
+  static_files: www/\1
+  upload: www/(.*)
+  secure: always
+  login: required

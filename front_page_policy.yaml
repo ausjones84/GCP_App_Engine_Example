@@ -1,0 +1,6 @@
+# Intended to overwrite current
+# All users should be able to access front page
+bindings:
+- members:
+  - allUsers
+  role: roles/iap.httpsResourceAccessor

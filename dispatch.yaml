@@ -1,0 +1,12 @@
+dispatch:
+  - url: "*/paid/*"
+    service: paid
+
+  - url: "*/paid"
+    service: paid
+
+  - url: "example1.tilelli.me/"
+    service: default
+
+  - url: "example1.tilelli.me/*"
+    service: default

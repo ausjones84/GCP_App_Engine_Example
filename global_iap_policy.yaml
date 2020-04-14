@@ -1,0 +1,8 @@
+# Intended to overwrite current
+bindings:
+- members:
+  - group:myco_content_admin@googlegroups.com
+  role: roles/iap.admin
+- members:
+  - group:myco_guests@googlegroups.com
+  role: roles/iap.httpsResourceAccessor
